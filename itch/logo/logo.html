@@ -1,9 +1,19 @@
 <style>
-.img-hover {
-  overflow: hidden;
-	border-radius: 15px;
-}
+  .img-hover-zoom {
+    overflow: hidden;
+  	border-radius: 15px;
+  }
 
+  .img-hover-zoom {
+    -webkit-transition: margin 0.3s ease-in-out;
+   -moz-transition: margin 0.3s ease-in-out;
+   -o-transition: margin 0.3s ease-in-out;
+   transition: margin 0.3s ease-in-out;
+  }
+
+  .img-hover-zoom:hover {
+    margin-top: -10px;
+  }
 
 .relative {
 	position: absolute;
@@ -63,6 +73,6 @@
 }
 
 </style>
-<div class="img-hover relative">
+<div class="img-hover-zoom relative">
 <img class="logo" src="logo.png" width="100%">
 </div>
