@@ -1,0 +1,313 @@
+<link rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz">
+
+<style>
+
+  body {
+          font-family: 'Yanone Kaffeesatz';
+        }
+
+h3 {
+  font-size: 2vw;
+  color: #a9a9a9;
+  font-weight: normal;
+}
+ a {
+   font-size: 3vw;
+   color: #a9a9a9;
+   text-decoration: none;
+   transition: .2s ease-in-out;
+ }
+
+ a:hover {
+     color: #ffffff;
+ }
+
+ .dropdown_item{
+   transition: transform .3s, filter .3s ease-in-out;
+   margin:0.2vw;
+ }
+
+ .dropdown_item:hover{
+  transform: scale(1.2);
+ }
+
+.img-hover-zoom {
+  overflow: hidden;
+	border-radius: 15px;
+}
+
+.img-hover-zoom img {
+  transition: transform .3s, filter .3s ease-in-out;
+}
+
+.img-hover-zoom:hover img {
+  transform: scale(1.1);
+	filter: opacity(30%);
+}
+
+.relative {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+
+}
+
+.invisible {
+	pointer-events: none;
+}
+
+.dropdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  position: relative;
+}
+.dropdown:hover {
+  cursor: pointer;
+}
+.dropdown:hover .dropdown_menu li {
+  display: block;
+}
+.dropdown_menu {
+  position: absolute;
+  top: auto;
+  right:0px;
+  width: 100%;
+  perspective: 1000px;
+  z-index: 100;
+}
+.dropdown_menu li {
+  display: none;
+  color: #ffffff;
+  opacity: 0;
+  text-align: center;
+}
+.dropdown:hover .dropdown_menu--animated {
+  display: block;
+}
+.dropdown_menu--animated {
+  display: none;
+}
+.dropdown_menu--animated li {
+  display: block;
+  opacity: 1;
+}
+.dropdown_menu-10 {
+  animation: rotateY 0.4s ease-in-out forwards;
+  transform-origin: top center;
+}
+@-moz-keyframes rotateY {
+  0% {
+    transform: rotateY(90deg);
+  }
+  80% {
+    transform: rotateY(-20deg);
+  }
+  100% {
+    transform: rotateY(0);
+  }
+}
+@-webkit-keyframes rotateY {
+  0% {
+    transform: rotateY(90deg);
+  }
+  80% {
+    transform: rotateY(-20deg);
+  }
+  100% {
+    transform: rotateY(0);
+  }
+}
+@-o-keyframes rotateY {
+  0% {
+    transform: rotateY(90deg);
+  }
+  80% {
+    transform: rotateY(-20deg);
+  }
+  100% {
+    transform: rotateY(0);
+  }
+}
+@keyframes rotateY {
+  0% {
+    transform: rotateY(90deg);
+  }
+  80% {
+    transform: rotateY(-20deg);
+  }
+  100% {
+    transform: rotateY(0);
+  }
+}
+
+.dropdown:hover .dropdown_menu--animated {
+    display: block;
+}
+.dropdown_menu--animated {
+    display: none;
+    li {
+      display: block;
+      opacity: 1;
+      }
+}
+
+</style>
+<body>
+<table style="width: 100% ;text-align: center;" border="0">
+<tbody><tr>
+<td>
+  <div class="dropdown dropdown-10 img-hover-zoom relative">
+    <img src="sarn.png" width="100%">
+    <ul class="dropdown_menu dropdown_menu--animated dropdown_menu-10">
+          <li class="dropdown_item"><a href="https://twitter.com/plutobirdo" target="_blank">TWITTER</a></li>
+          <li class="dropdown_item"><a href="https://sarnyoger.newgrounds.com/" target="_blank">NEWGROUNDS</a></li>
+          <li class="dropdown_item"><a href="https://saturnyoshi.itch.io/" target="_blank">ITCH.IO</a></li>
+    </ul>
+  </div>
+</td>
+<td>
+  <div class="dropdown dropdown-10 img-hover-zoom relative">
+    <img src="snakeblock.png" width="100%">
+    <ul class="dropdown_menu dropdown_menu--animated dropdown_menu-10">
+          <li class="dropdown_item"><a href="https://twitter.com/block_snake" target="_blank">TWITTER</a></li>
+    </ul>
+  </div>
+</td>
+<td>
+  <div class="dropdown dropdown-10 img-hover-zoom relative">
+    <img src="thx.png" width="100%">
+    <ul class="dropdown_menu dropdown_menu--animated dropdown_menu-10">
+          <li class="dropdown_item"><a href="https://twitter.com/OvergrownRobot" target="_blank">TWITTER</a></li>
+          <li class="dropdown_item"><a href="https://thxsprites.newgrounds.com/" target="_blank">NEWGROUNDS</a></li>
+    </ul>
+  </div>
+</td>
+<td>
+  <div class="dropdown dropdown-10 img-hover-zoom relative">
+    <img src="bub.png" width="100%">
+    <ul class="dropdown_menu dropdown_menu--animated dropdown_menu-10">
+          <li class="dropdown_item"><a href="https://twitter.com/bugblite" target="_blank">TWITTER</a></li>
+          <li class="dropdown_item"><a href="https://bub.newgrounds.com/" target="_blank">NEWGROUNDS</a></li>
+    </ul>
+  </div>
+</td>
+<td>
+  <div class="dropdown dropdown-10 img-hover-zoom relative">
+    <img src="orisghost.png" width="100%">
+    <ul class="dropdown_menu dropdown_menu--animated dropdown_menu-10">
+          <li class="dropdown_item"><a href="https://twitter.com/orisghost" target="_blank">TWITTER</a></li>
+          <li class="dropdown_item"><a href="https://orisghost.newgrounds.com/" target="_blank">NEWGROUNDS</a></li>
+    </ul>
+  </div>
+</td>
+<td>
+  <div class="dropdown dropdown-10 img-hover-zoom relative">
+    <img src="oroshibu.png" width="100%">
+    <ul class="dropdown_menu dropdown_menu--animated dropdown_menu-10">
+          <li class="dropdown_item"><a href="https://twitter.com/oroshibu" target="_blank">TWITTER</a></li>
+          <li class="dropdown_item"><a href="https://soundcloud.com/oroshibu" target="_blank">SOUNDCLOUD</a></li>
+          <li class="dropdown_item"><a href="https://oroshibu.newgrounds.com/" target="_blank">NEWGROUNDS</a></li>
+          <li class="dropdown_item"><a href="https://oroshibu.itch.io/" target="_blank">ITCH.IO</a></li>
+    </ul>
+  </div>
+</td>
+</tr><tr>
+<td style="width: 16%;">
+<h3>sarn</h3>
+</td>
+<td style="width: 16%;">
+<h3>SnakeBlock</h3>
+</td>
+<td style="width: 16%;">
+<h3>THX</h3>
+</td>
+<td style="width: 16%;">
+<h3>bub</h3>
+</td>
+<td style="width: 16%;">
+<h3>orisghost</h3>
+</td>
+<td style="width: 16%;">
+<h3>Oroshibu</h3>
+</td>
+</tr>
+<tr>
+  <td>
+    <div class="dropdown dropdown-10 img-hover-zoom relative">
+      <img src="jontherealjon.png" width="100%">
+      <ul class="dropdown_menu dropdown_menu--animated dropdown_menu-10">
+            <li class="dropdown_item"><a href="https://twitter.com/JonTheRealJon" target="_blank">TWITTER</a></li>
+            <li class="dropdown_item"><a href="https://jontherealjon.newgrounds.com/" target="_blank">NEWGROUNDS</a></li>
+      </ul>
+    </div>
+  </td>
+  <td>
+    <div class="dropdown dropdown-10 img-hover-zoom relative">
+      <img src="mistajub.png" width="100%">
+      <ul class="dropdown_menu dropdown_menu--animated dropdown_menu-10">
+            <li class="dropdown_item"><a href="https://twitter.com/jdubbsishere" target="_blank">TWITTER</a></li>
+            <li class="dropdown_item"><a href="https://mistajub.newgrounds.com/" target="_blank">NEWGROUNDS</a></li>
+            <li class="dropdown_item"><a href="https://mistajub.bandcamp.com/" target="_blank">BANDCAMP</a></li>
+      </ul>
+    </div>
+  </td>
+  <td>
+    <div class="dropdown dropdown-10 img-hover-zoom relative">
+      <img src="budj.png" width="100%">
+      <ul class="dropdown_menu dropdown_menu--animated dropdown_menu-10">
+            <li class="dropdown_item"><a href="https://twitter.com/budjmt" target="_blank">TWITTER</a></li>
+            <li class="dropdown_item"><a href="https://budjmt.newgrounds.com/" target="_blank">NEWGROUNDS</a></li>
+            <li class="dropdown_item"><a href="https://budjmt.itch.io/" target="_blank">ITCH.IO</a></li>
+      </ul>
+    </div>
+  </td>
+  <td>
+    <div class="dropdown dropdown-10 img-hover-zoom relative">
+      <img src="minichibis.png" width="100%">
+      <ul class="dropdown_menu dropdown_menu--animated dropdown_menu-10">
+            <li class="dropdown_item"><a href="https://twitter.com/minichibisart" target="_blank">TWITTER</a></li>
+            <li class="dropdown_item"><a href="https://minichibis.itch.io/" target="_blank">ITCH.IO</a></li>
+      </ul>
+    </div>
+  </td>
+  <td>
+    <div class="dropdown dropdown-10 img-hover-zoom relative">
+      <img src="attfooy.png" width="100%">
+      <ul class="dropdown_menu dropdown_menu--animated dropdown_menu-10">
+            <li class="dropdown_item"><a href="https://twitter.com/attfooy" target="_blank">TWITTER</a></li>
+      </ul>
+    </div>
+  </td>
+  <td>
+    <div class="dropdown dropdown-10 img-hover-zoom relative">
+      <img src="peas.png" width="100%">
+      <ul class="dropdown_menu dropdown_menu--animated dropdown_menu-10">
+            <li class="dropdown_item"><a href="https://twitter.com/RealestPeas" target="_blank">TWITTER</a></li>
+            <li class="dropdown_item"><a href="https://www.pillowfort.social/peas" target="_blank">PILLOWFORT</a></li>
+      </ul>
+    </div>
+  </td>
+</tr><tr>
+<td style="width: 16%;">
+<h3>JonTheRealJon</h3>
+</td>
+<td style="width: 16%;">
+<h3>Mista Jub</h3>
+</td>
+<td style="width: 16%;">
+<h3>budj</h3>
+</td>
+<td style="width: 16%;">
+<h3>minichibis</h3>
+</td>
+<td style="width: 16%;">
+<h3>Attfooy</h3>
+</td>
+<td style="width: 16%;">
+<h3>Peas</h3>
+</td>
+</tr></tbody></table>
+</body>
