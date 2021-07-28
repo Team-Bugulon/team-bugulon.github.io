@@ -1,0 +1,209 @@
+<link rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz">
+
+<style>
+
+  body {
+          font-family: 'Yanone Kaffeesatz';
+        }
+
+h3 {
+  font-size: 2vw;
+  color: #a9a9a9;
+  font-weight: normal;
+}
+ a {
+   font-size: 3vw;
+   color: #a9a9a9;
+   text-decoration: none;
+   transition: .2s ease-in-out;
+ }
+
+ a:hover {
+     color: #ffffff;
+ }
+
+ .dropdown_item{
+   transition: transform .3s, filter .3s ease-in-out;
+   margin:0.2vw;
+ }
+
+ .dropdown_item:hover{
+  transform: scale(1.2);
+ }
+
+.img-hover-zoom {
+  overflow: hidden;
+	border-radius: 15px;
+}
+
+.img-hover-zoom img {
+  transition: transform .3s, filter .3s ease-in-out;
+}
+
+.img-hover-zoom:hover img {
+  transform: scale(1.1);
+	filter: opacity(30%);
+}
+
+.relative {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+
+}
+
+.invisible {
+	pointer-events: none;
+}
+
+.dropdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  position: relative;
+}
+.dropdown:hover {
+  cursor: pointer;
+}
+.dropdown:hover .dropdown_menu li {
+  display: block;
+}
+.dropdown_menu {
+  position: absolute;
+  top: auto;
+  right:0px;
+  width: 100%;
+  perspective: 1000px;
+  z-index: 100;
+}
+.dropdown_menu li {
+  display: none;
+  color: #ffffff;
+  opacity: 0;
+  text-align: center;
+}
+.dropdown:hover .dropdown_menu--animated {
+  display: block;
+}
+.dropdown_menu--animated {
+  display: none;
+}
+.dropdown_menu--animated li {
+  display: block;
+  opacity: 1;
+}
+.dropdown_menu-10 {
+  animation: rotateY 0.4s ease-in-out forwards;
+  transform-origin: top center;
+}
+@-moz-keyframes rotateY {
+  0% {
+    transform: rotateY(90deg);
+  }
+  80% {
+    transform: rotateY(-20deg);
+  }
+  100% {
+    transform: rotateY(0);
+  }
+}
+@-webkit-keyframes rotateY {
+  0% {
+    transform: rotateY(90deg);
+  }
+  80% {
+    transform: rotateY(-20deg);
+  }
+  100% {
+    transform: rotateY(0);
+  }
+}
+@-o-keyframes rotateY {
+  0% {
+    transform: rotateY(90deg);
+  }
+  80% {
+    transform: rotateY(-20deg);
+  }
+  100% {
+    transform: rotateY(0);
+  }
+}
+@keyframes rotateY {
+  0% {
+    transform: rotateY(90deg);
+  }
+  80% {
+    transform: rotateY(-20deg);
+  }
+  100% {
+    transform: rotateY(0);
+  }
+}
+
+.dropdown:hover .dropdown_menu--animated {
+    display: block;
+}
+.dropdown_menu--animated {
+    display: none;
+    li {
+      display: block;
+      opacity: 1;
+      }
+}
+
+</style>
+
+<table class="text-center" style="width:100%;">
+    <tbody>
+        <tr>
+            <td class="text-center" colspan="2">
+                JULY 2021
+            </td>
+            <td class="text-center">
+                JUNE 2021
+            </td>
+            <td class="text-center" colspan="2">
+                MARCH 2021
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <h3 class="text-center">NEWGROUNDS JULY JAM</h3>
+            </td>
+            <td>
+                <h3 class="text-center">AI AND GAMES JAM 2021</h3>
+            </td>
+            <td>
+                <h3 class="text-center">THE BINDING OF ISAAC DLC</h3>
+            </td>
+            <td>
+                <h3 class="text-center">7DRL CHALLENGE 2021</h3>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <iframe src="https://bugulon.github.io/itch/thermal-trail/button.html"
+                    style="border: 0; width: 45%; height:9em;" scrolling="no"></iframe>
+                <br></td>
+            <td>
+                <iframe src="https://bugulon.github.io/itch/chickenshit/button.html"
+                    style="border: 0; width: 45%; height:9em;" scrolling="no"></iframe>
+                <br></td>
+            <td>
+                <iframe src="https://bugulon.github.io/itch/20-to-break/button.html"
+                    style="border: 0; width: 45%; height:9em;" scrolling="no"></iframe>
+                <br></td>
+            <td>
+                <iframe src="https://bugulon.github.io/itch/repentance/button.html"
+                    style="border: 0; width: 45%; height:9em;" scrolling="no"></iframe>
+                <br></td>
+            <td>
+                <iframe src="https://bugulon.github.io/itch/starguy-iv/button.html"
+                    style="border: 0; width: 45%; height:9em;" scrolling="no"></iframe>
+                <br></td>
+        </tr>
+    </tbody>
+</table>
