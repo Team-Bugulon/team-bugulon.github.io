@@ -1,0 +1,80 @@
+.game_cell {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.game_thumb {
+    border: 2px solid #3C2D3C;
+    overflow: hidden;
+    background-color: transparent !important;
+}
+
+
+/*hover animation*/
+
+.game_thumb img {
+    transition: transform .2s ease-out, filter .1s ease-out;
+}
+
+.game_thumb:hover img {
+    transform: scale(1.12);
+    filter: brightness(150%);
+}
+
+.game_thumb:active img {
+    transform: scale(0.85);
+    filter: brightness(200%);
+}
+
+.thumb_link {
+    margin: 4%;
+}
+
+.lazy_loaded {
+    border-radius: 11px;
+}
+
+.game_cell_data {
+    text-align: center;
+    margin-top: 0px !important;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-flow: column;
+}
+
+.game_title {
+    visibility: hidden;
+    height: 0;
+}
+
+.game_genre {
+    visibility: hidden;
+    height: 0;
+}
+
+.game_platform {
+    order: 1;
+    margin-top: 0px;
+    opacity: .65;
+    color: #91C248 !important;
+    scale: 80%;
+}
+
+.web_flag {
+    scale: 125%;
+    margin-right: 4% !important;
+    margin-left: 4% !important;
+    background-color: transparent !important;
+    color: #91C248 !important;
+}
+
+.game_text {
+    order: 2;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+}
